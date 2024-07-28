@@ -23,7 +23,7 @@ function movieHtml(movie) {
 
 async function onSearchChange(event){
     const searchTerm = event.target.value;
-    const movies = await fetch(`http://www.omdbapi.com/?apikey=e2cbd42e&s=${searchTerm}`)
+    const movies = await fetch(`https://www.omdbapi.com/?apikey=e2cbd42e&s=${searchTerm}`)
     const moviesData = await movies.json();
     console.log(moviesData)
     movieListEl.innerHTML = moviesData.Search.map(movie => movieHtml(movie)).join('');
