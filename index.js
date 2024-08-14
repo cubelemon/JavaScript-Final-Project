@@ -5,7 +5,7 @@ const movieListEl = document.querySelector('.movies__wrapper');
 
 function showMovieInfo(imdbID) {
     localStorage.setItem("imdbID", imdbID);
-    window.location.href = `JavaScript-Final-Project-/movie.html`;
+    window.location.href = 'movie.html';
 }
 
 function movieHtml(movie) {
